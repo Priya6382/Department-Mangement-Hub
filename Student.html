@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .header1 {
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .header2 {
+            text-align: left;
+            font-size: 10px;
+            float: left;
+        }
+
+        .header3 {
+            text-align: right;
+            font-size: 10px;
+            float: right;
+            margin-bottom: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+            color: black;
+            margin-left: 130px;
+        }
+
+        th, td {
+            border: 2px solid #000000;
+            padding: 8px;
+            text-align: left;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #d339c3ee;
+            color: rgb(2, 2, 2);
+            text-align: center;
+
+        }
+        .container-box {
+            margin-bottom: 20px;
+    background-color: rgba(163, 186, 208, 0.476);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #333333;
+}
+    </style>
+</head>
+<body>
+    <div class="header1">
+        <h1>Coimbatore Institute Of Technology</h1>
+        <h1>Department Of Computing</h1>
+        <h1>M.Sc (Artificial Intelligence And Machine Learning)</h1>
+    </div>
+    <div class="header2">
+        <h1>Senior Tutor : Dr. Shana J</h1>
+    </div>
+    <div class="header3">
+        <h1>Tutor : Dr. MahaLakshmi SB</h1>
+        <h1>Assistant Tutor : Dr. Sudha Muthusamy R</h1>
+    </div>
+
+    <div class="container-box">
+
+    <h1>Student Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Register Number</th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Phone Number</th>
+                <th>Mail-id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat the following row for each student -->
+            <tr>
+                <td>71762134001</td>
+                <td>Abarna A</td>
+                <td>17/03/2004</td>
+                <td><a href="tel:8870416782" style="text-decoration: none; color: rgb(2, 2, 2);">8870416782</a></td>
+                <td><a href="mailto:71762134001@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134001@cit.edu.in</a></td>
+            </tr>
+            <tr>
+                <td>71762134002</td>
+                <td>Abilash Pandian</td>
+                <td>12/02/2002</td>
+                <td><a href="tel:6369625511" style="text-decoration: none; color: rgb(2, 2, 2);">6369625511</a></td>
+                <td><a href="mailto:71762134002@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134002@cit.edu.in</a></td>
+            </tr>
+            <!-- Row 3 -->
+<tr>
+    <td>71762134003</td>
+    <td>Abiles V</td>
+    <td>12/11/2003</td>
+    <td><a href="tel:8124369008" style="text-decoration: none; color: rgb(2, 2, 2);">8124369008</a></td>
+    <td><a href="mailto:71762134003@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134003@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 4 -->
+<tr>
+    <td>71762134004</td>
+    <td>Aishvarya S</td>
+    <td>20/06/2003</td>
+    <td><a href="tel:9488915001" style="text-decoration: none; color: rgb(2, 2, 2);">9488915001</a></td>
+    <td><a href="mailto:71762134004@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134004@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 5 -->
+<tr>
+    <td>71762134005</td>
+    <td>Ajay Anand S</td>
+    <td>12/07/2004</td>
+    <td><a href="tel:6963715294" style="text-decoration: none; color: rgb(2, 2, 2);">6963715294</a></td>
+    <td><a href="mailto:71762134005@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134005@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 6 -->
+<tr>
+    <td>71762134006</td>
+    <td>Amizhthan S</td>
+    <td>24/06/2003</td>
+    <td><a href="tel:8300471149" style="text-decoration: none; color: rgb(2, 2, 2);">8300471149</a></td>
+    <td><a href="mailto:71762134006@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134006@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 7 -->
+<tr>
+    <td>71762134007</td>
+    <td>Amrutha M</td>
+    <td>14/10/2003</td>
+    <td><a href="tel:8870067212" style="text-decoration: none; color: rgb(2, 2, 2);">8870067212</a></td>
+    <td><a href="mailto:71762134007@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134007@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 8 -->
+<tr>
+    <td>71762134008</td>
+    <td>Anand Baalaji A</td>
+    <td>18/02/2004</td>
+    <td><a href="tel:8489765469" style="text-decoration: none; color: rgb(2, 2, 2);">8489765469</a></td>
+    <td><a href="mailto:71762134008@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134008@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 9 -->
+<tr>
+    <td>71762134009</td>
+    <td>Athish Pranav SV</td>
+    <td>06/04/2004</td>
+    <td><a href="tel:9677651871" style="text-decoration: none; color: rgb(2, 2, 2);">9677651871</a></td>
+    <td><a href="mailto:71762134009@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134009@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 10 -->
+<tr>
+    <td>71762134010</td>
+    <td>Daksina SM</td>
+    <td>26/11/2003</td>
+    <td><a href="tel:8778725546" style="text-decoration: none; color: rgb(2, 2, 2);">8778725546</a></td>
+    <td><a href="mailto:71762134010@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134010@cit.edu.in</a></td>
+</tr>
+<!-- Row 11 -->
+<tr>
+    <td>71762134011</td>
+    <td>Devapriyan VS</td>
+    <td>10/01/2004</td>
+    <td><a href="tel:9566569717" style="text-decoration: none; color: rgb(2, 2, 2);">9566569717</a></td>
+    <td><a href="mailto:71762134011@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134011@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 12 -->
+<tr>
+    <td>71762134012</td>
+    <td>Dhanush R</td>
+    <td>26/10/2003</td>
+    <td><a href="tel:9360402803" style="text-decoration: none; color: rgb(2, 2, 2);">9360402803</a></td>
+    <td><a href="mailto:71762134012@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134012@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 13 -->
+<tr>
+    <td>71762134013</td>
+    <td>Dhanusree V S</td>
+    <td>15/03/2004</td>
+    <td><a href="tel:9025656497" style="text-decoration: none; color: rgb(2, 2, 2);">9025656497</a></td>
+    <td><a href="mailto:71762134013@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134013@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 14 -->
+<tr>
+    <td>71762134014</td>
+    <td>Dharaneesh R P</td>
+    <td>01/08/2003</td>
+    <td><a href="tel:9597343557" style="text-decoration: none; color: rgb(2, 2, 2);">9597343557</a></td>
+    <td><a href="mailto:71762134014@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134014@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 15 -->
+<tr>
+    <td>71762134015</td>
+    <td>Farhaan J</td>
+    <td>02/10/2003</td>
+    <td><a href="tel:9962708876" style="text-decoration: none; color: rgb(2, 2, 2);">9962708876</a></td>
+    <td><a href="mailto:71762134015@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134015@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 16 -->
+<tr>
+    <td>71762134016</td>
+    <td>Gowri Priya M</td>
+    <td>21/09/2003</td>
+    <td><a href="tel:7548836975" style="text-decoration: none; color: rgb(2, 2, 2);">7548836975</a></td>
+    <td><a href="mailto:71762134016@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134016@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 17 -->
+<tr>
+    <td>71762134017</td>
+    <td>Harini.R.R</td>
+    <td>01/07/2003</td>
+    <td><a href="tel:6369404224" style="text-decoration: none; color: rgb(2, 2, 2);">6369404224</a></td>
+    <td><a href="mailto:71762134017@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134017@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 18 -->
+<tr>
+    <td>71762134018</td>
+    <td>Hariss.K.V</td>
+    <td>02/03/2004</td>
+    <td><a href="tel:6369682493" style="text-decoration: none; color: rgb(2, 2, 2);">6369682493</a></td>
+    <td><a href="mailto:71762134018@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134018@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 19 -->
+<tr>
+    <td>71762134019</td>
+    <td>Harisudan R T</td>
+    <td>20/09/2003</td>
+    <td><a href="tel:9345449756" style="text-decoration: none; color: rgb(2, 2, 2);">9345449756</a></td>
+    <td><a href="mailto:71762134019@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134019@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 20 -->
+<tr>
+    <td>71762134020</td>
+    <td>Janani N</td>
+    <td>08/09/2003</td>
+    <td><a href="tel:9363285766" style="text-decoration: none; color: rgb(2, 2, 2);">9363285766</a></td>
+    <td><a href="mailto:71762134020@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134020@cit.edu.in</a></td>
+</tr>
+<!-- Row 21 -->
+<tr>
+    <td>71762134021</td>
+    <td>Kamatchi Somesh S</td>
+    <td>11/10/2003</td>
+    <td><a href="tel:9655841515" style="text-decoration: none; color: rgb(2, 2, 2);">9655841515</a></td>
+    <td><a href="mailto:71762134021@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134021@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 22 -->
+<tr>
+    <td>71762134022</td>
+    <td>Kausika.P</td>
+    <td>05/06/2003</td>
+    <td><a href="tel:7502520352" style="text-decoration: none; color: rgb(2, 2, 2);">7502520352</a></td>
+    <td><a href="mailto:71762134022@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134022@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 23 -->
+<tr>
+    <td>71762134023</td>
+    <td>Kaviya C</td>
+    <td>01/06/2003</td>
+    <td><a href="tel:6374645058" style="text-decoration: none; color: rgb(2, 2, 2);">6374645058</a></td>
+    <td><a href="mailto:71762134023@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134023@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 24 -->
+<tr>
+    <td>71762134024</td>
+    <td>Logesh SD</td>
+    <td>18/05/2004</td>
+    <td><a href="tel:8248211569" style="text-decoration: none; color: rgb(2, 2, 2);">8248211569</a></td>
+    <td><a href="mailto:71762134024@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134024@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 25 -->
+<tr>
+    <td>71762134025</td>
+    <td>Madesh R</td>
+    <td>24/09/2003</td>
+    <td><a href="tel:9360209800" style="text-decoration: none; color: rgb(2, 2, 2);">9360209800</a></td>
+    <td><a href="mailto:71762134025@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134025@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 26 -->
+<tr>
+    <td>71762134026</td>
+    <td>Madhumith</td>
+    <td>04/07/2003</td>
+    <td><a href="tel:9360240951" style="text-decoration: none; color: rgb(2, 2, 2);">9360240951</a></td>
+    <td><a href="mailto:71762134026@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134026@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 27 -->
+<tr>
+    <td>71762134027</td>
+    <td>Manisha KK</td>
+    <td>31/07/2003</td>
+    <td><a href="tel:7904039140" style="text-decoration: none; color: rgb(2, 2, 2);">7904039140</a></td>
+    <td><a href="mailto:71762134027@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134027@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 28 -->
+<tr>
+    <td>71762134028</td>
+    <td>Mithunsankar S</td>
+    <td>21/10/2003</td>
+    <td><a href="tel:7373036337" style="text-decoration: none; color: rgb(2, 2, 2);">7373036337</a></td>
+    <td><a href="mailto:71762134028@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134028@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 29 -->
+<tr>
+    <td>71762134029</td>
+    <td>Muhilan G S</td>
+    <td>23/07/2004</td>
+    <td><a href="tel:7397169278" style="text-decoration: none; color: rgb(2, 2, 2);">7397169278</a></td>
+    <td><a href="mailto:71762134029@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134029@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 30 -->
+<tr>
+    <td>71762134030</td>
+    <td>Navaneeth G A</td>
+    <td>14/01/2003</td>
+    <td><a href="tel:8056384866" style="text-decoration: none; color: rgb(2, 2, 2);">8056384866</a></td>
+    <td><a href="mailto:71762134030@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134030@cit.edu.in</a></td>
+</tr>
+<!-- Row 31 -->
+<tr>
+    <td>71762134031</td>
+    <td>Naveen R</td>
+    <td>29/10/2003</td>
+    <td><a href="tel:8940521094" style="text-decoration: none; color: rgb(2, 2, 2);">8940521094</a></td>
+    <td><a href="mailto:71762134031@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134031@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 32 -->
+<tr>
+    <td>71762134032</td>
+    <td>Naveena S</td>
+    <td>17/06/2003</td>
+    <td><a href="tel:7010433505" style="text-decoration: none; color: rgb(2, 2, 2);">7010433505</a></td>
+    <td><a href="mailto:71762134032@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134032@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 33 -->
+<tr>
+    <td>71762134033</td>
+    <td>Nikitta K S</td>
+    <td>24/11/2003</td>
+    <td><a href="tel:9043045347" style="text-decoration: none; color: rgb(2, 2, 2);">9043045347</a></td>
+    <td><a href="mailto:71762134033@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134033@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 34 -->
+<tr>
+    <td>71762134034</td>
+    <td>Padhmasini A</td>
+    <td>29/10/2003</td>
+    <td><a href="tel:9994709521" style="text-decoration: none; color: rgb(2, 2, 2);">9994709521</a></td>
+    <td><a href="mailto:71762134034@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134034@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 35 -->
+<tr>
+    <td>71762134035</td>
+    <td>Parvathavarthini P</td>
+    <td>25/10/2003</td>
+    <td><a href="tel:6383309836" style="text-decoration: none; color: rgb(2, 2, 2);">6383309836</a></td>
+    <td><a href="mailto:71762134035@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134035@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 36 -->
+<tr>
+    <td>71762134036</td>
+    <td>Pradeep D E</td>
+    <td>20/01/2004</td>
+    <td><a href="tel:6382208845" style="text-decoration: none; color: rgb(2, 2, 2);">6382208845</a></td>
+    <td><a href="mailto:71762134036@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134036@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 37 -->
+<tr>
+    <td>71762134037</td>
+    <td>Praveena K</td>
+    <td>19/11/2003</td>
+    <td><a href="tel:8870754338" style="text-decoration: none; color: rgb(2, 2, 2);">8870754338</a></td>
+    <td><a href="mailto:71762134037@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134037@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 38 -->
+<tr>
+    <td>71762134038</td>
+    <td>Priyadharshini V</td>
+    <td>23/05/2004</td>
+    <td><a href="tel:6382451789" style="text-decoration: none; color: rgb(2, 2, 2);">6382451789</a></td>
+    <td><a href="mailto:71762134038@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134038@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 39 -->
+<tr>
+    <td>71762134039</td>
+    <td>Raghava N</td>
+    <td>31/08/2003</td>
+    <td><a href="tel:7904923628" style="text-decoration: none; color: rgb(2, 2, 2);">7904923628</a></td>
+    <td><a href="mailto:71762134039@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134039@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 40 -->
+<tr>
+    <td>71762134040</td>
+    <td>Raghul Ajith N</td>
+    <td>10/02/2003</td>
+    <td><a href="tel:9003382826" style="text-decoration: none; color: rgb(2, 2, 2);">9003382826</a></td>
+    <td><a href="mailto:71762134040@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134040@cit.edu.in</a></td>
+</tr>
+<!-- Row 41 -->
+<tr>
+    <td>71762134041</td>
+    <td>Rithumiga S</td>
+    <td>26/11/2003</td>
+    <td><a href="tel:7539959650" style="text-decoration: none; color: rgb(2, 2, 2);">7539959650</a></td>
+    <td><a href="mailto:71762134041@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134041@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 42 -->
+<tr>
+    <td>71762134042</td>
+    <td>Ritvik S</td>
+    <td>15/01/2004</td>
+    <td><a href="tel:8668018704" style="text-decoration: none; color: rgb(2, 2, 2);">8668018704</a></td>
+    <td><a href="mailto:71762134042@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134042@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 43 -->
+<tr>
+    <td>71762134043</td>
+    <td>Santhosh V</td>
+    <td>23/04/2004</td>
+    <td><a href="tel:9486130118" style="text-decoration: none; color: rgb(2, 2, 2);">9486130118</a></td>
+    <td><a href="mailto:71762134043@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134043@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 44 -->
+<tr>
+    <td>71762134044</td>
+    <td>Santhoshini R</td>
+    <td>20/07/2003</td>
+    <td><a href="tel:9363308488" style="text-decoration: none; color: rgb(2, 2, 2);">9363308488</a></td>
+    <td><a href="mailto:71762134044@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134044@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 45 -->
+<tr>
+    <td>71762134045</td>
+    <td>Shanmathi M</td>
+    <td>05/11/2003</td>
+    <td><a href="tel:9344275018" style="text-decoration: none; color: rgb(2, 2, 2);">9344275018</a></td>
+    <td><a href="mailto:71762134045@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134045@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 46 -->
+<tr>
+    <td>71762134046</td>
+    <td>Shiva Nithish B</td>
+    <td>09/01/2003</td>
+    <td><a href="tel:9629558507" style="text-decoration: none; color: rgb(2, 2, 2);">9629558507</a></td>
+    <td><a href="mailto:71762134046@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134046@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 47 -->
+<tr>
+    <td>71762134047</td>
+    <td>Srinita J S</td>
+    <td>01/06/2003</td>
+    <td><a href="tel:7708159060" style="text-decoration: none; color: rgb(2, 2, 2);">7708159060</a></td>
+    <td><a href="mailto:71762134047@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134047@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 48 -->
+<tr>
+    <td>71762134048</td>
+    <td>Subashini S</td>
+    <td>15/05/2004</td>
+    <td><a href="tel:9080479272" style="text-decoration: none; color: rgb(2, 2, 2);">9080479272</a></td>
+    <td><a href="mailto:71762134048@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134048@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 49 -->
+<tr>
+    <td>71762134049</td>
+    <td>Suganesh</td>
+    <td>25/02/2004</td>
+    <td><a href="tel:7538809989" style="text-decoration: none; color: rgb(2, 2, 2);">7538809989</a></td>
+    <td><a href="mailto:71762134049@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134049@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 50 -->
+<tr>
+    <td>71762134050</td>
+    <td>Surya S</td>
+    <td>10/05/2003</td>
+    <td><a href="tel:9344817790" style="text-decoration: none; color: rgb(2, 2, 2);">9344817790</a></td>
+    <td><a href="mailto:71762134050@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134050@cit.edu.in</a></td>
+</tr>
+<!-- Row 51 -->
+<tr>
+    <td>71762134051</td>
+    <td>Susmitha M</td>
+    <td>25/02/2004</td>
+    <td><a href="tel:9385670781" style="text-decoration: none; color: rgb(2, 2, 2);">9385670781</a></td>
+    <td><a href="mailto:71762134051@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134051@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 52 -->
+<tr>
+    <td>71762134052</td>
+    <td>Swetha Krithika.M</td>
+    <td>07/08/2003</td>
+    <td><a href="tel:7200090044" style="text-decoration: none; color: rgb(2, 2, 2);">7200090044</a></td>
+    <td><a href="mailto:71762134052@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134052@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 53 -->
+<tr>
+    <td>71762134053</td>
+    <td>Swetha N</td>
+    <td>13/06/2002</td>
+    <td><a href="tel:6385407516" style="text-decoration: none; color: rgb(2, 2, 2);">6385407516</a></td>
+    <td><a href="mailto:71762134053@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134053@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 54 -->
+<tr>
+    <td>71762134054</td>
+    <td>Tarunika R</td>
+    <td>03/03/2003</td>
+    <td><a href="tel:8220002332" style="text-decoration: none; color: rgb(2, 2, 2);">8220002332</a></td>
+    <td><a href="mailto:71762134054@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134054@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 55 -->
+<tr>
+    <td>71762134055</td>
+    <td>Thanushri . S</td>
+    <td>29/12/2003</td>
+    <td><a href="tel:9840915881" style="text-decoration: none; color: rgb(2, 2, 2);">9840915881</a></td>
+    <td><a href="mailto:71762134055@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134055@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 56 -->
+<tr>
+    <td>71762134056</td>
+    <td>Vanathi S</td>
+    <td>12/08/2004</td>
+    <td><a href="tel:9384755572" style="text-decoration: none; color: rgb(2, 2, 2);">9384755572</a></td>
+    <td><a href="mailto:71762134056@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134056@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 57 -->
+<tr>
+    <td>71762134057</td>
+    <td>Venkateshwaran S V</td>
+    <td>20/10/2003</td>
+    <td><a href="tel:6382129482" style="text-decoration: none; color: rgb(2, 2, 2);">6382129482</a></td>
+    <td><a href="mailto:71762134057@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134057@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 58 -->
+<tr>
+    <td>71762134058</td>
+    <td>Vetrivel M</td>
+    <td>05/07/2004</td>
+    <td><a href="tel:9345895902" style="text-decoration: none; color: rgb(2, 2, 2);">9345895902</a></td>
+    <td><a href="mailto:71762134058@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134058@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 59 -->
+<tr>
+    <td>71762134059</td>
+    <td>Vigneshwaran B</td>
+    <td>20/09/2003</td>
+    <td><a href="tel:7397685571" style="text-decoration: none; color: rgb(2, 2, 2);">7397685571</a></td>
+    <td><a href="mailto:71762134059@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134059@cit.edu.in</a></td>
+</tr>
+
+<!-- Row 60 -->
+<tr>
+    <td>71762134060</td>
+    <td>Yashwanth R</td>
+    <td>15/02/2004</td>
+    <td><a href="tel:9345570940" style="text-decoration: none; color: rgb(2, 2, 2);">9345570940</a></td>
+    <td><a href="mailto:71762134060@cit.edu.in" style="text-decoration: none; color: rgb(2, 2, 2);">71762134060@cit.edu.in</a></td>
+</tr>
+</div>
+
+
+
+        </tbody>
+    </table>
+    <div class="button-container">
+        <a href="Student.csv" class="back-link" download="AI & ML Student List">
+            Download Student List as CSV
+        </a>
+        <a href="header.html" class="back-link">Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Lab Project</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(201, 68, 90); /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #000000; /* Dark gray header background */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #495057; /* Darker gray navigation background */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff; /* White link color */
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #000000; /* Light gray link color on hover */
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            color: rgb(196, 38, 169);
+            background-color: aqua;
+        }
+
+        /* iFrame Styles */
+        #iframeContainer {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>19MAM58 Cloud Computing Lab Project</h1>
+        <p>M.Sc in Artificial Intelligence & Machine Learning</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#features">Project Description</a></li>
+            <li><a href="#technology">Steps</a></li>
+            <li><a href="#security">Users</a></li>
+            <li><a href="#deployment">Deployment</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#about">Done By</a></li>
+        </ul>
+    </nav>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- iFrame Container -->
+    <!-- Features Section -->
+<a href="ProjectDes.html" onclick="redirectToNextPage('ProjectDes.html')" style="text-decoration: none; color: inherit;">
+    <div class="card" id="features">
+        <h2><i class="fas fa-cogs"></i> Project Description</h2>
+    </div>
+</a>
+
+<!-- Technology Section -->
+<a href="Steps.html" onclick="redirectToNextPage('Steps.html')"style="text-decoration: none; color: inherit;">
+    <div class="card" id="technology">
+        <h2><i class="fas fa-wrench"></i> Steps</h2>
+        <p></p>
+    </div>
+</a>
+
+<!-- Security Section -->
+<a href="Users.html" onclick="redirectToNextPage('Users.html')" style="text-decoration: none; color: inherit;">
+    <div class="card" id="security">
+        <h2><i class="fas fa-users"></i> Users Of the Applications</h2>
+    </div>
+</a>
+
+<!-- Deployment Section -->
+<a href="header.html" onclick="redirectToNextPage('Timetable.html')" style="text-decoration: none; color: inherit;">
+    <div class="card" id="training">
+        <h2><i class="fas fa-rocket"></i> Deployment</h2>
+    </div>
+</a>
+
+<!-- Documentation Section -->
+<a href="Documentation.html" onclick="redirectToNextPage('Documentation.html')" style="text-decoration: none; color: inherit;">
+    <div class="card" id="documentation">
+        <h2><i class="fas fa-book"></i> Documentation</h2>
+    </div>
+</a>
+
+<!-- Done By Section -->
+<a href="Contact.html" onclick="redirectToNextPage('Contact.html')" style="text-decoration: none; color: inherit;">
+    <div class="card" id="about">
+        <h2><i class="fas fa-user"></i> Done By</h2>
+    </div>
+</a>
+
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+        const iframeContainer = document.getElementById('iframeContainer');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', smoothScroll);
+        });
+
+        function smoothScroll(e) {
+            e.preventDefault();
+            const targetId = e.target.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        function redirectToNextPage(headerFileName) {
+            // Save the header file name to local storage
+            localStorage.setItem('headerFileName', headerFileName);
+        }
+
+        function loadContent(contentUrl) {
+            // Display the iFrame container
+            iframeContainer.style.display = 'block';
+            // Load content into the iFrame
+            iframeContainer.innerHTML = `<iframe src="${contentUrl}" width="100%" height="600px"></iframe>`;
+        }
+    </script>
+</body>
+</html>

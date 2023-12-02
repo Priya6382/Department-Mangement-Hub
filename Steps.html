@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       body {
+            background-color: pink;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #030303;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #030303;
+            text-align: center;
+        }
+
+        h2 {
+            color: #3528a7;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 20px;
+            background-color: rgba(163, 186, 208, 0.476);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* List Styles */
+        ul,
+        ol {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        /* Button Styles */
+        .back-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #000000;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-left: 650px;
+        }
+
+        .back-link:hover {
+            background-color: #333333;
+        }
+
+        code {
+    display: inline-block;
+    background-color: #c48d8d;
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.6;
+    overflow: auto;
+    font-weight: bold;
+    color: black;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Steps to Deploy the Application in Kubernetes and Dockers</h1>
+
+<section>
+    <div class="deployment-container">
+        <div class="deployment-step">
+            <h2>Step 1: Dockerization</h2>
+            <p>Prepare the application for Dockerization by creating a Dockerfile. This file includes instructions for building a Docker image.</p>
+            <p><strong>Dockerfile Example:</strong></p>
+            <pre><code>FROM node:14
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+CMD ["npm", "start"]</code></pre>
+        </div>
+    </section>
+    <section>
+
+        <div class="deployment-step">
+            <h2>Step 2: Build Docker Image</h2>
+            <ul>
+                <li>Open a terminal and navigate to the project directory.</li>
+                <li>Run the command to build the Docker image:</li>
+            </ul>
+            <pre><code>docker build -t your-image-name:tag .</code></pre>
+        </div>
+</section>  
+<section>
+        <div class="deployment-step">
+            <h2>Step 3: Push to Docker Hub</h2>
+            <ul>
+                <li>Login to Docker Hub using the command:</li>
+            </ul>
+            <pre><code>docker login</code></pre>
+            <ul>
+                <li>Push the built image to Docker Hub:</li>
+            </ul>
+            <pre><code>docker push your-image-name:tag</code></pre>
+        </div>
+    </section>
+<section>
+        <div class="deployment-step">
+            <h2>Step 4: Kubernetes Deployment</h2>
+            <p>Prepare Kubernetes deployment using imperative commands.</p>
+            <p><strong>Deployment Example:</strong></p>
+            <pre><code>kubectl create deployment your-deployment --image=your-image-name:tag --replicas=3</code></pre>
+            <p><strong>Service Example:</strong></p>
+            <pre><code>kubectl expose deployment your-deployment --type=LoadBalancer --port=80</code></pre>
+
+            <p><strong>Additional Steps:</strong></p>
+            <ol>
+                <li>Check the status of the deployment:</li>
+                <pre><code>kubectl get deployments</code></pre>
+
+                <li>Check the status of the pods:</li>
+                <pre><code>kubectl get pods</code></pre>
+
+                <li>Check the status of the service:</li>
+                <pre><code>kubectl get services</code></pre>
+            </ol>
+
+            <p><strong>Scale Deployment:</strong></p>
+            <p>Scale the deployment to 5 replicas:</p>
+            <pre><code>kubectl scale deployment your-deployment --replicas=5</code></pre>
+
+            <p><strong>Delete Deployment:</strong></p>
+            <p>Delete the deployment and associated resources:</p>
+            <pre><code>kubectl delete deployment your-deployment</code></pre>
+        </div>
+    </section>
+    <section>
+
+        <div class="deployment-step">
+            <h2>Step 6: Scale Deployment</h2>
+            <p>Scale the deployment to a specified number of replicas.</p>
+            <p><strong>Scale Deployment Example:</strong></p>
+            <pre><code>kubectl scale deployment your-deployment --replicas=5</code></pre>
+        </div>
+    </section>
+<section>
+        <div class="deployment-step">
+            <h2>Step 7: Monitor and Troubleshoot</h2>
+            <p>Monitor the deployment using Kubernetes dashboard or command-line tools. Review logs and troubleshoot any issues as needed.</p>
+            <p><strong>Check Pods:</strong></p>
+            <pre><code>kubectl get pods</code></pre>
+            <p><strong>Check Services:</strong></p>
+            <pre><code>kubectl get services</code></pre>
+            <p><strong>View Logs:</strong></p>
+            <pre><code>kubectl logs pod-name</code></pre>
+        </div>
+    </section>
+    <section>
+        <div class="deployment-step">
+            <h2>Step 8: Verify Deployment</h2>
+            <p>After deploying your application to Kubernetes, it's crucial to verify its functionality and ensure a successful deployment. Follow these steps to perform verification:</p>
+
+            <ol>
+                <li><strong>Accessing the Deployed Application:</strong>
+                    <ul>
+                        <li>Identify the External IP or DNS of your Kubernetes service. This information is crucial for accessing your application.</li>
+                        <li>Run the following command to get the external IP (for a LoadBalancer type service) or NodePort (for a NodePort type service):
+                            <pre><code>kubectl get services</code></pre>
+                        </li>
+                        <li>Once you have the External IP or NodePort, open a web browser and enter the following URL:
+                            <pre><code>http://external-ip-or-node-port</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Verifying Functionality:</strong>
+                    <ul>
+                        <li>Ensure that the application loads successfully in the web browser.</li>
+                        <li>Perform basic interactions with the application to verify core functionality.</li>
+                        <li>Check console logs or developer tools in the browser for any errors or warnings.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Checking Logs:</strong>
+                    <ul>
+                        <li>Use the following command to view the logs of your application's pods:
+                            <pre><code>kubectl logs -l app = your-app</code></pre>
+                        </li>
+                        <li>Inspect the logs for any error messages, warnings, or other relevant information that might indicate issues with the deployment.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p>By following these steps, you can ensure that your application is not only deployed successfully but also functioning as expected. Address any issues or errors encountered during this verification process to maintain a reliable and robust deployment.</p>
+        </div>
+    </div>
+</section>
+<a href="Index.html" class="back-link">Back</a>
+</body>
+
+</html>
